@@ -1,5 +1,4 @@
 {
-    "cmd": ["zig", "build"],
     "selector": "source.zig",
     "file_regex": "^(.+.zig):(\\d+):(\\d+): error: (.+)$",
     "line_regex": "^.+.zig:(\\d+):(\\d+): error: (.+)$",
@@ -17,7 +16,7 @@
         },
         {
             "cmd": ["zig", "build", "test"],
-            "selector": "source.zig",
+            "selector": "build.zig",
             "working_dir": "$folder",
             "name": "Test Project"
         }
